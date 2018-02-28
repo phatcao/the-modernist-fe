@@ -126,6 +126,7 @@ header {
     display: block;
     color: #000000;
     margin-bottom: 60px;
+    transition: .5s ease;
 }
 
 .service-list a:hover {
@@ -209,6 +210,9 @@ header {
 .portfolio-gallery .item:hover .item-title {
     opacity: 1;
 }
+.portfolio-gallery .item:hover .item-image {
+    border: 5px solid #76c38f;
+}
 
 
 /*Footer*/ 
@@ -274,7 +278,7 @@ footer span {
     border: 0;
     margin-bottom: 10px;
 }
-.form .form-group input:focus {
+.form .form-group input:focus, .form .form-group textarea:focus {
     box-shadow: none;
 }
 .btn-lime-2 {
