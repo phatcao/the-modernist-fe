@@ -29,10 +29,13 @@ body {
 header {
     color: #fff;
 }
-
+.navbar-light a.navbar-brand:hover {
+    color: #76c38f;
+}
 .navbar-light .navbar-brand {
     color: #fff;
     font-size: 28px;
+    transition: 1s ease;
 }
 .navbar-light .navbar-brand small {
     position: absolute;
@@ -46,6 +49,7 @@ header {
     text-transform: uppercase;
     color: #fff;
     margin:0 10px;
+    transition: 1s ease-in;
 }
 .navbar-light .navbar-nav .nav-item:hover {
     background-color: #76c38f;
