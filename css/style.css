@@ -292,7 +292,7 @@ footer span {
     padding: 25px 0;
     font-size: 13px;
 }
-@media only screen and (min-width: 768px) { 
+@media only screen and (min-width: 768px) and (max-width: 1024) { 
     .main-slider .slide-desc {
         padding: 10% 0;
     }
