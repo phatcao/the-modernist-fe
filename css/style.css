@@ -36,6 +36,9 @@ header {
 .navbar-light .navbar-toggler {
     margin-top: 12px;
 }
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #76c38f;
+}
 .navbar-light .navbar-brand {
     color: #fff;
     font-size: 28px;
@@ -83,16 +86,31 @@ header {
     margin-bottom: 30px;
 
 }
-.main-slider .slide-desc .btn-lime {
+.main-slider .slide-desc .link-lime {
     background-color: #76c38f;
     color: #fff;
     font-size: 13px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border:1px solid transparent;
+    transition: 1s ease;
+    text-decoration: none;
+    -webkit-transition: 1s ease;
+}
+.main-slider .slide-desc .link-lime:hover {
+    border:1px solid #76c38f;
+    color: #76c38f;
+    background-color: transparent;
+}
+
+.main-slider .slide-desc .link-lime {
+
 }
 .main-slider .slide-desc p {
     font-size: 12px;
 }
 .main-slider .slide-image {
-    width: 80%;
+    width: 75%;
     padding: 10% 0;
 }
 .main-slider .slide-image img {
@@ -304,9 +322,12 @@ footer span {
     padding: 25px 0;
     font-size: 13px;
 }
-@media only screen and (min-width: 768px) and (max-width: 1024) { 
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
     .main-slider .slide-desc {
         padding: 10% 0;
+    }
+    .main-slider .slide-image {
+        padding: 30% 0;
     }
     .service-list a h4 {
         font-size: 20px;
@@ -316,5 +337,4 @@ footer span {
     .navbar-nav {
         margin-top: 20px;
     }
-
 }
